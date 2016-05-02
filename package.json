@@ -1,0 +1,17 @@
+{
+  "name": "satoshi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "license": "MIT",
+  "dependencies": {
+    "asn1.js": "^4.6.0",
+    "bn.js": "^4.11.3",
+    "elliptic": "^6.2.3"
+  }
+}
