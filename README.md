@@ -57,6 +57,6 @@ signature: 3046022100ad2e6d185cabf4b9683bacb1785ef9b05e4d30767291a65c7b8473494a0
 
 ### The way it works
 
-
+TBA
 
 [0]: https://blockchain.info/tx/828ef3b079f9c23829c56fe86e85b4a69d9e06e5b54ea597eef5fb3ffef509fe?show_adv=true
