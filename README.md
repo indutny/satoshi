@@ -2,6 +2,9 @@
 
 Motivated by: http://www.drcraigwright.net/jean-paul-sartre-signing-significance/
 
+All signatures are new and are generated from the [existing one][1], see
+"The way it works" below.
+
 Public key to verify ([available here][0]):
 
 ```
@@ -57,6 +60,27 @@ signature: 3046022100ad2e6d185cabf4b9683bacb1785ef9b05e4d30767291a65c7b8473494a0
 
 ### The way it works
 
-TBA
+[ECDSA][2] signatures are verified using two mathematical structures:
+
+* Galois field of order `p` (where `p` is prime)
+* Elliptic curve group f order `n` (where `n` is defined by particular curve)
+
+Looking at the [verification algorithm][3], it is easy to imagine that
+it is possible to multiply signature's `r`, `s`, and `message` by some numbers
+to get a valid signature verifiable with the public key.
+
+The trick is that you can't really select what the new `message` will be, or
+in other words given particular target `message` it is very hard to figure out
+what the new `r` and `s` should be.
+
+To conclude, it is easy to modify `r` and `s`, and get a new `message` out of
+this. This is what I have done in this repo. This method could be used to
+generate infinite number of signature/message pairs. All of them will be
+verifiable by the target public key.
+
+If only we could undo sha256...
 
 [0]: https://blockchain.info/tx/828ef3b079f9c23829c56fe86e85b4a69d9e06e5b54ea597eef5fb3ffef509fe?show_adv=true
+[1]: https://blockchain.info/tx/828ef3b079f9c23829c56fe86e85b4a69d9e06e5b54ea597eef5fb3ffef509fe?show_adv=true
+[2]: https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm
+[3]: https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm#Signature_verification_algorithm
