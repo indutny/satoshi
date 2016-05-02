@@ -2,7 +2,7 @@
 
 Motivated by: http://www.drcraigwright.net/jean-paul-sartre-signing-significance/
 
-Public key to verify ([available here][0]:
+Public key to verify ([available here][0]):
 
 ```
 0411db93e1dcdb8a016b49840f8c53bc1eb68a382e97b1482ecad7b148a6909a5cb2e0eaddfb84ccf9744464f82e160bfa9b8b64f9d4c03f999b8643f656b412a3
@@ -54,5 +54,9 @@ signature: 3046022100df0c4db54e11e969659203897e5fa086eef3b00025aa6dfeddb52c70605
 message: b93958c355e891e6d58fb91861761fe687ae33ecf5d8a72fcc0d6dc56424991a
 signature: 3046022100ad2e6d185cabf4b9683bacb1785ef9b05e4d30767291a65c7b8473494a040d49022100d7c00203bd0bf194657d7b46bc0579fc5e79deff56c2559291ce27334b752513
 ```
+
+### The way it works
+
+
 
 [0]: https://blockchain.info/tx/828ef3b079f9c23829c56fe86e85b4a69d9e06e5b54ea597eef5fb3ffef509fe?show_adv=true
